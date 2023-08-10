@@ -33,7 +33,35 @@ public class Endereco {
     private String cidade;
     private String uf;
     
-    public void atualizarInformacoes(DadosEndereco dados) {
+    public String getLogradouro() {
+		return logradouro;
+	}
+
+	public String getBairro() {
+		return bairro;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public String getNumero() {
+		return numero;
+	}
+
+	public String getComplemento() {
+		return complemento;
+	}
+
+	public String getCidade() {
+		return cidade;
+	}
+
+	public String getUf() {
+		return uf;
+	}
+
+	public void atualizarInformacoes(DadosEndereco dados) {
     	
     	if(dados.logradouro() != null)
     		logradouro = dados.logradouro();
