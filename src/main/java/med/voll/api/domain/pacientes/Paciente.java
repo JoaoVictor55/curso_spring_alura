@@ -1,4 +1,4 @@
-package med.voll.api.pacientes;
+package med.voll.api.domain.pacientes;
 
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -7,8 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.Valid;
-import med.voll.api.enderecos.Endereco;
-import med.voll.api.medicos.DadosAtualizacaoMedicos;
+import med.voll.api.domain.enderecos.Endereco;
 
 @Entity(name = "Paciente")
 @Table(name = "pacientes")

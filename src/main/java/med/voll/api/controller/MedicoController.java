@@ -1,7 +1,6 @@
 package med.voll.api.controller;
 
 import java.net.URI;
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -19,12 +18,12 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import med.voll.api.medicos.DadosAtualizacaoMedicos;
-import med.voll.api.medicos.DadosCadastroMedicos;
-import med.voll.api.medicos.DadosDetalhamentoMedico;
-import med.voll.api.medicos.DadosListagemMedico;
-import med.voll.api.medicos.Medico;
-import med.voll.api.medicos.MedicoRepository;
+import med.voll.api.domain.medicos.DadosAtualizacaoMedicos;
+import med.voll.api.domain.medicos.DadosCadastroMedicos;
+import med.voll.api.domain.medicos.DadosDetalhamentoMedico;
+import med.voll.api.domain.medicos.DadosListagemMedico;
+import med.voll.api.domain.medicos.Medico;
+import med.voll.api.domain.medicos.MedicoRepository;
 
 @RestController
 @RequestMapping("medicos")
